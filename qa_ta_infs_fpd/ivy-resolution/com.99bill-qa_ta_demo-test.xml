@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.99bill"
+		module="qa_ta_demo"
+		revision="working@sh401030200062"
+		conf="test"
+		confs="default, compile, zip, test, sources"
+		date="20140512091851"/>
+	<dependencies>
+		<module organisation="org.apache" name="commons-io">
+			<revision name="1.4" status="release" pubdate="20121121152506" resolver="bill99_repository.public" artresolver="bill99_repository.public" downloaded="false" searched="false" default="true" conf="default" position="0">
+				<metadata-artifact status="no" details="" size="396" time="0" location="D:\Local_Repository\repository\ivy-cache\org.apache\commons-io\ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-io/ivys/ivy-1.4.xml"/>
+				<caller organisation="com.99bill" name="qa_ta_demo" conf="test" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="working@sh401030200062"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="109043" time="0" location="D:\Local_Repository\repository\ivy-cache\org.apache\commons-io\jars\commons-io-1.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-io/jars/commons-io-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

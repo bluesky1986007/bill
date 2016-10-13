@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="mamMdpLiftToolsConnectionFactory" class="com.bill99.mdp.connection.MdpConnectionFactory">
+		<property name="properties" value="classpath:properties/${STAGE_ID}/jms.properties" />
+		<property name="prefix" value="notify" />
+		<property name="sessionCacheSize" value="5" />
+	</bean>
+
+</beans>

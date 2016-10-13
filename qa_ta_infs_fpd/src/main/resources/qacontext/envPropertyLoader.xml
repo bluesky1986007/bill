@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+<!-- 该工程下引用了配置文件,必须使用steel.spring.ext.PropertyPlaceholderConfigurer -->
+<!-- 如果没有引用文件,可以使用Spring 默认的. -->
+	<bean class="steel.spring.ext.PropertyPlaceholderConfigurer">
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="rootLocation">
+			<value>classpath:properties/env_dir.props</value>
+		</property>
+		<property name="childLocations">
+			<list>
+				<value>classpath:properties/framework/${STAGE_ID}/${GROUP_ID}/jdbc.props</value>
+				<value>classpath:properties/${STAGE_ID}/hessian.properties</value>
+				<value>classpath:properties/${STAGE_ID}/jms.properties</value>
+				<value>classpath:properties/${STAGE_ID}/weburl.properties</value>
+				<value>classpath:properties/${STAGE_ID}/jdbc.props</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>

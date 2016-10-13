@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.99bill"
+		module="99bill-qa"
+		revision="working@sh401030200058"
+		conf="default"
+		confs="default, compile, zip"
+		date="20140725165457"/>
+	<dependencies>
+	</dependencies>
+</ivy-report>

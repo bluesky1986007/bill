@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="intra">
+
+<select id="intraUserInfo"  parameterClass="java.lang.String"  resultClass="java.util.HashMap">
+with tt as(select * from seashell.businesssignup where email=#id# order by signupid desc)
+select tt.workorderid,tt.signupid from tt where 1=1 and rownum=1
+
+</select>
+
+<select id="intraMemberCode"  parameterClass="java.lang.String"  resultClass="java.util.HashMap">
+select t.membercode from seashell.memberidentity t where t.idcontent =#id#
+
+</select>
+
+<!-- <select id="queryData1"  resultClass="com.bill99.ta.fsc.common.dto.OrderTraderInfo"> -->
+<!-- Select w.orderseqid,w.membercode From seashell.Withdrawworkorder w Where w.batchid=2014031831791564 -->
+
+<!-- </select> -->
+
+</sqlMap>

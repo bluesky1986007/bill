@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<suite name="INFS_ACC_FPD">
+    <test name="INFS_ACC_FPD">
+        <classes>
+            <class name="com.bill99.ta.infs.fpd.test.interfaces.PrdTradeQueryTest">
+                <methods>
+                    <include name="PrdTradeQuery"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

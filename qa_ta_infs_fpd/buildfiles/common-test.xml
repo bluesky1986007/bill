@@ -1,0 +1,55 @@
+<project name="common-app" default="" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<property environment="env" />
+
+	<!--  Load publish version from file pubrevision.properties  -->
+	<property file="pubrevision.properties" />
+
+	<!-- set javac debug property -->
+	<property name="build.debug" value="on" />
+
+	<!-- build variables used -->
+	<property name="build.dir" value="${basedir}/build" />
+	<property name="release.dir" value="${basedir}/release" />
+	<property name="classes.dir" value="${build.dir}/classes" />
+	<property name="release.classes.dir" value="${release.dir}/cleases" />
+	<property name="filterresources.dir" value="${basedir}/src/main/filter-resources" />
+	<property name="lib.dir" value="${basedir}/lib" />
+	<property name="report.dir" value="${basedir}/report" />
+	<property name="lib.local.dir" value="D:/TA/jars" />
+	<property name="tasource.dir" value="D:/TA" />
+	<property name="ant.home" value="d:/ant" />
+	<property name="testng.report.dir" value="${basedir}/test-output" />
+	<available property="resources.is.existent" file="${resources.dir}"/>
+		
+	<!-- Loading ivy settings -->
+	<ivy:settings file="${ivy.settings.dir}/ivysettings.xml" />
+	
+	<!-- path setting -->
+	<path id="lib.path.id">
+		<fileset dir="${lib.dir}" />
+	</path>
+	<tstamp>
+		  <format property="build.time" pattern="MM/dd/yyyy hh:mm aa" locale="en"/>
+	</tstamp>
+	
+	<target name="show-property-value" description="--> show all pre-defined property values" >
+		<echo Message="repository.dir.public=${repository.dir.public}" />
+		<echo Message="repository.dir.buildbuffer=${repository.dir.buildbuffer}" />
+		<echo Message="repository.dir.build=${repository.dir.build}" />
+		<echo Message="repository.dir.ca.build=${repository.dir.ca.build}" />
+		<echo Message="repository.dir=${repository.dir}" />
+		<echo Message="buildscripts.dir=${buildscripts.dir}" />
+		<echo Message="ivy.settings.dir=${ivy.settings.dir}" />
+		<echo Message="build.debug=${build.debug}" />
+		<echo Message="build.dir=${build.dir}" />
+		<echo Message="release.dir=${release.dir}" />
+		<echo Message="release.classes.dir=${release.classes.dir}" />
+		<echo Message="resources.dir=${resources.dir}" />
+		<echo Message="lib.dir=${lib.dir}" />
+		<echo Message="source.dir=${source.dir}" />
+		<echo Message="testsource.dir=${testsource.dir}" />
+		<echo Message="report.dir=${report.dir}" />
+		<echo Message="compile.encoding=${compile.encoding}" />
+	</target>
+</project>

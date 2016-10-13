@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.99bill"
+		module="99bill-qa"
+		revision="working@sh401030200058"
+		conf="zip"
+		confs="default, compile, zip"
+		date="20140725165457"/>
+	<dependencies>
+		<module organisation="com.99bill" name="fpd-account-api">
+			<revision name="1.0.0.1" status="integration" pubdate="20140722101229" resolver="bill99_repository_buildbuffer" artresolver="bill99_repository_buildbuffer" downloaded="true" searched="true" default="false" conf="default" position="0">
+				<metadata-artifact status="successful" details="" size="481" time="28" location="D:\Local_Repository\repository\ivy-cache\com.99bill\fpd-account-api\ivy-1.0.0.1.xml" searched="true" original-local-location="D:\Local_Repository\repository\ivy-cache\com.99bill\fpd-account-api\ivy-1.0.0.1.xml.original" origin-is-local="false" origin-location="http://192.168.52.93/com.99bill/fpd-account-api/ivys/ivy-1.0.0.1.xml"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="zip" rev="1.0.0.1" rev-constraint-default="1.0.0.1" rev-constraint-dynamic="1.0.0.1" callerrev="working@sh401030200058"/>
+				<artifacts>
+					<artifact name="fpd-account-api" type="jar" ext="jar" status="successful" details="" size="42172" time="38" location="D:\Local_Repository\repository\ivy-cache\com.99bill\fpd-account-api\jars\fpd-account-api-1.0.0.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.93/com.99bill/fpd-account-api/jars/fpd-account-api-1.0.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

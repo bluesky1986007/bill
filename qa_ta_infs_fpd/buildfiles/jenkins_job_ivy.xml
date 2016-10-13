@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="leotest" default="runtest" basedir="../">
+	<description>Builds, tests, and runs the project shelper.</description>
+	<property file="D:/Local_Repository/settings/client/ccbuild-http.properties" />
+	<property name="compile.encoding" value="utf-8" />
+ 	<property name="source.dir" value="${basedir}/src/main/java" />
+ 	<property name="resources.dir" value="${basedir}/src/main/resources" />
+	<import file="./common-test-targets.xml" />
+	<property environment="env" />
+</project>

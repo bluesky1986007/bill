@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdp="http://www.99bill.com/schema/mdp"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.99bill.com/schema/mdp http://www.99bill.com/schema/mdp/bill99-mdp-1.0.xsd">
+
+
+	<mdp:reference id="investPlanRemitResultCallbackService"
+		interface="com.bill99.seashell.domain.mdp.service.InvestPlanRemitResultCallbackService"
+		destination="notify.fsc.invest.planCallback" source="fsc.invest-mdp.client"
+		concurrency="5" connection-factory="mamMdpLiftToolsConnectionFactory"
+		timeout="10000">
+	</mdp:reference>
+
+	<mdp:reference id="investHandlePlanService"
+		interface="com.bill99.seashell.domain.mdp.service.InvestHandlePlanService"
+		destination="notify.fsc.invest.handlePlan" source="fsc.app-fsc-invest-mdp.client"
+		concurrency="5" connection-factory="mamMdpLiftToolsConnectionFactory" timeout="20000" />
+	
+</beans>
