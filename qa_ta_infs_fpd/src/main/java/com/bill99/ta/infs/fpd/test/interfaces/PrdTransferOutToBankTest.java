@@ -29,7 +29,7 @@ public class PrdTransferOutToBankTest extends BaseTestCase {
   @Autowired
   private InterfaceCheck interfaceCheck;
   
-  @Test(dataProvider = "prdTransferOutToBank")
+  @Test(dataProvider = ""+"prdTransferOutToBank")
   public void prdTransferOutToBank(Map<String, String> datadriven) throws ParseException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 	  	  
 	  Reporter.start("------"+datadriven.get("seq")+" "+datadriven.get("comment")+"-------");

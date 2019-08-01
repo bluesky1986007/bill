@@ -30,7 +30,7 @@ public class PrdTradeQueryTest extends BaseTestCase {
   @Autowired
   private InterfaceCheck interfaceCheck;
   
-  @Test(dataProvider = "PrdTradeQueryTest")
+  @Test(dataProvider = ""+"PrdTradeQueryTest")
   public void PrdTradeQuery(Map<String, String> datadriven) throws ParseException, IllegalAccessException, InvocationTargetException, NoSuchMethodException{
 	  	  
 	  Reporter.start("------"+datadriven.get("seq")+" "+datadriven.get("comment")+"-------");

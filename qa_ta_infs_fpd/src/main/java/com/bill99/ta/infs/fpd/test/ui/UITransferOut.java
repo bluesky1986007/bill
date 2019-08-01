@@ -40,7 +40,7 @@ public class UITransferOut extends BaseTestCase {
 
 	}
 	
-	@Test(enabled = true,dataProvider = "transferOut", description = "理财产品转出")
+	@Test(enabled = true,dataProvider = ""+"transferOut", description = "理财产品转出")
 	public void companyTransferInFromAcct(Map<String, String> datadriven) throws FileNotFoundException,
 			IOException, InterruptedException {
 

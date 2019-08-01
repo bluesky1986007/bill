@@ -29,7 +29,7 @@ public class PrdTransferInFromAcctTest extends BaseTestCase {
   @Autowired
   private InterfaceCheck interfaceCheck;
   
-  @Test(dataProvider = "PrdTransferInFromAcctTest")
+  @Test(dataProvider = ""+"PrdTransferInFromAcctTest")
   public void PrdTransferInFromAcct(Map<String, String> datadriven) throws ParseException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 	  	  
 	  Reporter.start("------"+datadriven.get("seq")+" "+datadriven.get("comment")+"-------");

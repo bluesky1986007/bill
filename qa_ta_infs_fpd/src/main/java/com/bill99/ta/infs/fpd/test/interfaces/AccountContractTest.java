@@ -28,7 +28,7 @@ public class AccountContractTest extends BaseTestCase {
   @Autowired
   private InterfaceCheck interfaceCheck;
   
-  @Test(dataProvider = "accountContract")
+  @Test(dataProvider = ""+"accountContract")
   public void accountContractSign(Map<String, String> datadriven) throws ParseException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 	  
 	  

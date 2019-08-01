@@ -39,7 +39,7 @@ public class UIQuery extends BaseTestCase {
 
 	}
 	
-	@Test(enabled = true,dataProvider = "query", description = "理财通查询")
+	@Test(enabled = true,dataProvider = ""+"query", description = "理财通查询")
 	public void companyTransferInFromAcct(Map<String, String> datadriven) throws FileNotFoundException,
 			IOException, InterruptedException {
 

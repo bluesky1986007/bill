@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="libs-最新最全的">
+    <CLASSES>
+      <root url="file://E:/libsManager/libs-最新最全的" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://E:/libsManager/libs-最新最全的" />
+    </SOURCES>
+    <jarDirectory url="file://E:/libsManager/libs-最新最全的" recursive="false" />
+    <jarDirectory url="file://E:/libsManager/libs-最新最全的" recursive="false" type="SOURCES" />
+  </library>
+</component>

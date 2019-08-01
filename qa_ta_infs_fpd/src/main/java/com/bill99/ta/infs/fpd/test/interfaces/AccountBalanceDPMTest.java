@@ -29,7 +29,7 @@ public class AccountBalanceDPMTest extends BaseTestCase {
   @Autowired
   private InterfaceCheck interfaceCheck;
   
-  @Test(dataProvider = "accountBalance")
+  @Test(dataProvider = ""+"accountBalance")
   public void accountBalance(Map<String, String> datadriven) throws ParseException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 	  	  
 	  Reporter.start("------"+datadriven.get("seq")+" "+datadriven.get("comment")+"-------");

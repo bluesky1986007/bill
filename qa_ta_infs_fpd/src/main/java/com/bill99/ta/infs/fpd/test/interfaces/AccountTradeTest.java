@@ -29,7 +29,7 @@ public class AccountTradeTest extends BaseTestCase {
 	@Autowired
 	private InterfaceCheck interfaceCheck;
 
-	@Test(dataProvider = "accountTrade")
+	@Test(dataProvider = ""+"accountTrade")
 	public void accountTrade(Map<String, String> datadriven)
 			throws ParseException, IllegalAccessException,
 			InvocationTargetException, NoSuchMethodException {

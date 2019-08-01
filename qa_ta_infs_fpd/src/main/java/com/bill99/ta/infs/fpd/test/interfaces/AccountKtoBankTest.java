@@ -29,7 +29,7 @@ public class AccountKtoBankTest extends BaseTestCase {
   @Autowired
   private InterfaceCheck interfaceCheck;
   
-  @Test(dataProvider = "accountKtoBank")
+  @Test(dataProvider = ""+"accountKtoBank")
   public void accountKtoBank(Map<String, String> datadriven) throws ParseException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 	  	  
 	  Reporter.start("------"+datadriven.get("seq")+" "+datadriven.get("comment")+"-------");

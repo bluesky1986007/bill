@@ -29,7 +29,7 @@ public class AccountTransferOutTest extends BaseTestCase {
   @Autowired
   private InterfaceCheck interfaceCheck;
   
-  @Test(dataProvider = "accountTransferOut")
+  @Test(dataProvider = ""+"accountTransferOut")
   public void accountTransferOut(Map<String, String> datadriven) throws ParseException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 	  	  
 	  Reporter.start("------"+datadriven.get("seq")+" "+datadriven.get("comment")+"-------");
